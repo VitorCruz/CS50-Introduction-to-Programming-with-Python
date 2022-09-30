@@ -23,5 +23,6 @@ except requests.RequestException:
 bitcoin_cost = float(response["bpi"]["USD"]["rate_float"])
 total_cost = n * bitcoin_cost
 
+## PRINT BITCOIN UNIT PRICE AND TOTAL COST OF DESIRED BITCOINS
 print(f'Bitcoin cost = {bitcoin_cost:,.4f}')
 print(f'Final cost = {total_cost:,.4f}')
